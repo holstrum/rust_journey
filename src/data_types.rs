@@ -12,8 +12,8 @@ path_scalar();
 path_array();
 path_tuple();
 path_slice();
-//path_vector();
-//path_struct();
+path_vector();
+path_struct();
 }
 
 fn path_scalar(){
@@ -159,5 +159,12 @@ println!("second element in array {}",human3.3[1]);
 }
 
 fn path_slice(){
+    
+}
+fn path_vector(){
+    
+
+}
+fn path_struct(){
     
 }
