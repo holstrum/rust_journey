@@ -12,6 +12,7 @@ fn main() {
 
     new_function();
     control_flow_example();
+    test();
 }
 
 fn new_function() {
@@ -40,3 +41,16 @@ fn control_flow_example() {
         _ => println!("Other number"),
     }
 }
+fn test() {
+    let mut counter = 0;
+
+    while counter < 5 {
+        println!("Counter: {}", counter);
+        counter += 1;
+    }
+
+    for i in 0..5 {
+        println!("For loop iteration: {}", i);
+    }
+}
+// am trying pushing this code to github one more time
