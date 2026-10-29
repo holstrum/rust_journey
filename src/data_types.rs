@@ -1,4 +1,4 @@
-use std::io::{self, stdin};
+use std::io;
 //use rand::Rng;
 
 fn main(){
@@ -154,6 +154,14 @@ fn path_tuple(){
     println!("the individual elements are ");
     println!("first element {}",human3.3[0]);
 println!("second element in array {}",human3.3[1]);
+
+// unpacking tuple values into individual variables using pattern matchin
+
+let human_3 = ("John",20,false);
+
+let (name , age, is_correct_age) = human_3;
+
+println!("The name is {name}, the age is {age} and the boolean value is {is_correct_age}");
 
 
 }
