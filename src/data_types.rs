@@ -167,7 +167,29 @@ println!("The name is {name}, the age is {age} and the boolean value is {is_corr
 }
 
 fn path_slice(){
+    let integer_slice:&[i32;6 ] = &[167,28,490,6,878,56];
+    println!("the string slice contains {:?}",integer_slice);
+    // accessing the elements of the string slice
+
+    println!("the first element of the slice is {}",integer_slice[0]);
+    println!("The second element within the string slice is {}", integer_slice[1]);
+
+    // question can string slices be used with actual strings
     
+    let slicing_string:&[&str; 5] = &["cynthia","precious", "micheka", "charity","ngina"];
+    
+    println!("the string slice cantains the following elements {:?}",slicing_string);
+    // i assume accessing the elemens is just the same as before
+    
+
+    println!("the string slice cantains the following third element {}",slicing_string[2]);
+
+    // what about the scenario where i want to convert several string slices to Actual strings
+
+    let slice_to_string:[ String; 5] = ["cynthia".to_string(),"precious".to_string(), "micheka".to_string(), "charity".to_string(),"ngina".to_string()];
+
+    println!("The contents of the sliced string data set is {:?}",slice_to_string);
+
 }
 fn path_vector(){
     
