@@ -190,6 +190,17 @@ fn path_slice(){
 
     println!("The contents of the sliced string data set is {:?}",slice_to_string);
 
+    // the benefit of using strings over string slices is that they are mutable and growable while sring slices are immutable and fixed in size. Additionally, strings can be manipulated and modified, while string slices are read-only views into existing strings.
+
+   // let mut test_push:&[String]= &["chopapi".to_string()];
+    
+   // test_push.push_str&["munanyo"]; // as expected this method was far fetched and didnt yield any reasonable results
+
+
+
+// chnanging elements
+
+
 }
 fn path_vector(){
     
