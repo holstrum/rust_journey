@@ -84,6 +84,8 @@ fn path_array(){
     // accessing the shorthand via indexing
     let first_short = short_hand[0];
     println!("The first element of the shorthand array is {}",first_short);
+    //can a short hand be accessed directly as a normal array would
+    println!("the second element of the shorthand is {}",short_hand[1]);// turns out it can no need to create a new variable in this simple code scenario
 
     // invalid array access
 
@@ -193,6 +195,12 @@ fn path_slice(){
     // the benefit of using strings over string slices is that they are mutable and growable while sring slices are immutable and fixed in size. Additionally, strings can be manipulated and modified, while string slices are read-only views into existing strings.
 
    // let mut test_push:&[String]= &["chopapi".to_string()];
+
+    let mut push_over = String::from("chopapi");
+
+   push_over.push_str("munanyo"); // this method works as expected and yields the desired result
+
+    println!("The string after pushing is {}",push_over);
     
    // test_push.push_str&["munanyo"]; // as expected this method was far fetched and didnt yield any reasonable results
 
