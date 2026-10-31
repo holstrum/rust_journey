@@ -198,7 +198,7 @@ fn path_slice(){
 
     let mut push_over = String::from("chopapi");
 
-   push_over.push_str("munanyo"); // this method works as expected and yields the desired result
+   push_over.push_str(" munanyo"); // this method works as expected and yields the desired result
 
     println!("The string after pushing is {}",push_over);
     

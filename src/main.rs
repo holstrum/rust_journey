@@ -16,7 +16,7 @@ fn main() {
 }
 
 fn new_function() {
-    let raw_input = "\
+    let raw_input = "
         This is a raw string literal.
         It can span multiple lines and include special characters like \n and \t without needing to escape them.";
     let cleaned_input = raw_input.trim();
