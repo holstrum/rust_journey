@@ -60,6 +60,11 @@ another_main_function();
 my_height(156);
 credentials("Stephen","Rukwaro", 20 , 1.8);
 
+
+// trying to use compund data types as a function parameter specifically tuples
+
+
+
 }
 fn my_height(height:i32){
 
@@ -101,3 +106,5 @@ println!(" Your names are  {} ,  you are {} years old and are  {} meters tall? "
 
 
 }
+
+// can i use the knowledge ive gained from compund data types to create a function that takes in a tuple as an argument and returns a tuple as a return value
