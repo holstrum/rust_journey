@@ -55,7 +55,8 @@ fn path_scalar(){
     let remainder: i32 = 43 % 5;
     let power: f64 = 2.0_f64.powf(3.0_f64);
     let truncated_division: i32 = -5 / 3;
-    println!("The sum is {sum}, the difference is {difference}, the product is {product}, the quotient is {quotient}, the remainder is {remainder}, the power is {power} and the truncated division is {truncated_division}");
+    let fract:f64= {3.0/8.0};
+    println!("The sum is {sum}, the difference is {difference}, the product is {product}, the quotient is {quotient}, the remainder is {remainder}, the power is {power} and the truncated division is {truncated_division}, fraction is {fract} ");
     
 }
 
@@ -75,6 +76,7 @@ fn path_array(){
     ["convegent-divergent nozzle","combustion chamber", "fuel injector assembly","turbo pump","gas impeller", "turbine","fuel pump"];
 
     println!("The parts of a rocket engine are {:?}",rocket_engine_parts);
+    println!("the thrird rocket part is {}",rocket_engine_parts[2]);
 
     // initializing a shorthanded array
 
@@ -83,14 +85,22 @@ fn path_array(){
     
     // accessing the shorthand via indexing
     let first_short = short_hand[0];
+
     println!("The first element of the shorthand array is {}",first_short);
+
     //can a short hand be accessed directly as a normal array would
+
     println!("the second element of the shorthand is {}",short_hand[1]);// turns out it can no need to create a new variable in this simple code scenario
 
+    let third_shorthand = short_hand[2];
+
+    println!("the third shorthand element is {}",third_shorthand);
     // invalid array access
 
     let index_test = [1,2,3,4,5,6]; // a  number array
+
     let animal_index = ["cow","goat","chicken","donkey", "monkey", "zebra"];// an aimal string array
+
 
 
     println!("enter and index to access the array element");
@@ -159,7 +169,7 @@ println!("second element in array {}",human3.3[1]);
 
 // unpacking tuple values into individual variables using pattern matchin
 
-let human_3 = ("John",20,false);
+let human_3 = ("John" ,20,false);
 
 let (name , age, is_correct_age) = human_3;
 

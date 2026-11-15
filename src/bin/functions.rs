@@ -1,5 +1,6 @@
 use std::io;
 
+// we use the const key word instead of the let key worde to declare global variable.. global variables 
 // the main function is the entry point of the program and is where the execution of the program begins
 
 fn another_main_function(){
@@ -63,6 +64,33 @@ credentials("Stephen","Rukwaro", 20 , 1.8);
 
 // trying to use compund data types as a function parameter specifically tuples
 
+println!("for BMI calculations what is your height");
+let mut height_2 = String::new();
+
+io::stdin()
+.read_line(& mut height_2)
+. expect("failed to fetch height for BMI");
+
+let height_2_input  = height_2
+.trim()
+.parse()
+.expect("not an integer");
+
+let mut mass_2 = String::new();
+
+io::stdin()
+.read_line(& mut mass_2)
+.expect("failed to read bmi mass");
+
+let mass_2_input  = mass_2
+.trim()
+.parse()
+.expect("not itegr my boy");
+
+
+let _my_bmi = bmi(height_2_input,mass_2_input);
+
+
 
 
 }
@@ -93,7 +121,7 @@ println!("{fist_name} {scnd}, am {age} years old {height} M tall");
 
 fn add(a:i32,b:i32)->i32{
 
-a+b // an expression that returns a value tied to the given function
+a+b// an expression that returns a value tied to the given function
 }
 
 // testing out whether i can asign values to functions from user inputs
@@ -107,4 +135,15 @@ println!(" Your names are  {} ,  you are {} years old and are  {} meters tall? "
 
 }
 
+
 // can i use the knowledge ive gained from compund data types to create a function that takes in a tuple as an argument and returns a tuple as a return value
+
+fn bmi(height_2_input:f64, mass_2_input:f64)->f64{
+
+    let soln =  mass_2_input/(height_2_input*height_2_input);
+
+    println!("the solution is {:.2}", soln);
+
+soln
+
+}
