@@ -14,8 +14,7 @@ path_tuple();
 path_slice();
 path_vector();
 path_struct();
-}
-
+}  
 fn path_scalar(){
     // integer
     // number withou decimal component

@@ -1,6 +1,25 @@
-fn main(){
-let  mut snip = String:: from("This is a snippet of code that I am trying to push to github");
+use std::io;
 
-snip.push_str(" and I am trying to see if it will be pushed successfully");
-println!("The revised snippet is: {}", snip);
+fn main(){
+// this specific code base is to write code snippets that give  me a general idea of how to use rust programming language and ow its programs work
+
+// found code that takes multiple inputs and stores them in tuple
+
+multi_input();
+
+}
+
+fn multi_input(){
+
+println!("Enter Name, Age and Height E.g (Sarah, 10 , 1.6)")
+
+let mut answers = String::new();
+
+io::stdin().read_line(& mut answers). expect("failed to fetch input");
+
+
+let parts = answers.trim().split_whitespace();
+
+
+
 }
