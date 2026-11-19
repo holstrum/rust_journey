@@ -24,8 +24,8 @@ trial = literal;
 
 println!("trial gives{trial}"); 
 
-apparently let is a binding that cannot be ignored problem is its not that necessary for integers and that is confusing
-*/
+apparently let is a binding that cannot be ignored 
+its also the same case for integers */
 
 
 let x = 90;
@@ -39,11 +39,40 @@ println!("The value of x and y are {x} and {y}");
 let  x = 67;
 let y = x + 1;
 
+println!("The value of y is {y}");
+
 // apparently its unnecessary but mutation is required
+
+// the kind of string that can be mutated and modified is the "String type"
+
+let mut modif = String::from("chopapi");
+
+let z = & mut  modif;
+z.push_str(", munanyo");
+
+println!("{z}");
+// we can also use the clone method on itegers its just completely unneccesary
+
+let z = 56 + 120 ;
+let t = z.clone();
+
+// clone is a deep copy method that copies both pointer and memory data
+// when moving a value to another string only the pointer , len and capacity is copied 
+// This avoids calling duplicated memory
+
+println!("The value of t is {t}");
 rule_1();
 rule_2();
 rule_3();
 post_scope();
+
+// you can pass a value to a function just the same way that assignment does
+
+let  godz = String::from("Mecha");
+
+new_owner(godz);
+
+
 }
 
 fn rule_1(){
@@ -110,5 +139,14 @@ fn post_scope( /*z: & String*/){
 -- This function fails to run as s1 is out of scope and the function post scope isnt called within the same
 function as s1
 */
+
+}
+
+fn new_owner(own_again:String) -> String{
+
+    println!("{own_again}");
+
+    
+    own_again
 
 }
