@@ -4,7 +4,42 @@ fn main (){
 
 // first am going to go through all the ownership rules one at a time
 
+//hardcoded strign literalls--- saved on stack , fast and are immutable as a result
 
+let literal = "lemme see if i can change this";
+
+let new_literal = literal;
+
+
+println!("{literal}");
+
+println!("the value of the new literal is {new_literal} and the old one is {literal}");
+
+// data on stack on stack is easy to copy and us a result most ownership rules dont apply same case goes for integers
+
+// lemme try not calling let and  see how the hardcoded string literal behaves
+/*
+
+trial = literal;
+
+println!("trial gives{trial}"); 
+
+apparently let is a binding that cannot be ignored problem is its not that necessary for integers and that is confusing
+*/
+
+
+let x = 90;
+let y = x;
+
+
+println!("The value of x and y are {x} and {y}");
+
+// checking whether let is necessary for integers
+
+let  x = 67;
+let y = x + 1;
+
+// apparently its unnecessary but mutation is required
 rule_1();
 rule_2();
 rule_3();
