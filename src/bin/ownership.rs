@@ -72,6 +72,15 @@ let  godz = String::from("Mecha");
 
 new_owner(godz);
 
+// trying owneship with tuples
+let zawarudo = String::from("Totio tameri");
+let (zawarudo_len , len ) = calc(zawarudo);
+
+let remain =  len % 9;
+
+let time_stop = len - remain;
+
+println!("the length of {zawarudo_len} is {time_stop} seconds");
 
 }
 
@@ -149,4 +158,13 @@ fn new_owner(own_again:String) -> String{
     
     own_again
 
+}
+
+//ownership of variables follows the same pattern each time
+// when a variable goes out of scope the drop function is called for heap data
+// 
+
+fn calc(s: String)->(String, usize){
+    let length = s.len();
+    (s, length)
 }
