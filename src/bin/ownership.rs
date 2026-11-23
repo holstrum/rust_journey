@@ -168,3 +168,7 @@ fn calc(s: String)->(String, usize){
     let length = s.len();
     (s, length)
 }
+
+// REFERENCE AND BOROWING
+
+

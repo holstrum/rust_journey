@@ -5,13 +5,14 @@ fn main(){
 
 // found code that takes multiple inputs and stores them in tuple
 
-multi_input();
+//multi_input();
+
+calc_len()
 
 }
+/*fn multi_input(){
 
-fn multi_input(){
-
-println!("Enter Name, Age and Height E.g (Sarah, 10 , 1.6)")
+println!("Enter Name, Age and Height E.g (Sarah, 10 , 1.6)");
 
 let mut answers = String::new();
 
@@ -22,4 +23,20 @@ let parts = answers.trim().split_whitespace();
 
 
 
+} */
+
+fn calc_len(){
+    
+    let mut  hulu = String::from("I am the king of the world");
+
+    let len = check_hulu(& mut hulu);
+
+    println!("The length of the string {hulu} is {len}");
+
+
+}
+
+fn check_hulu(x :& String)-> usize{
+
+    x.len()
 }
